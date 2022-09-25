@@ -18,13 +18,14 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 img {
   max-width: 100%;
+  height: 100%;
 }
 ul {
   list-style: none;
@@ -35,7 +36,7 @@ a {
   text-decoration: none;
 }
 /*cualquier clase que finalizan en __conteneddor*/
-[class*="container"] {
+.container {
   width: 95%;
   max-width: 120rem;
   margin: 0 auto;
@@ -43,15 +44,15 @@ a {
 
 .content {
   width: 90%;
-  max-width: 50rem;
+  max-width: 60rem;
   margin: 0 auto;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(104, 103, 103, 0.31);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
 }
 .search {
   text-align: center;
@@ -82,9 +83,30 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 1.8rem;
+  margin-block: 2rem;
 }
 @media (min-width: 768px) {
   .clima-temp {
     flex-direction: row;
   }
+}
+.info-description {
+  display: flex;
+  align-items: center;
+}
+.info-subtitle {
+  margin: 0;
+  text-transform: capitalize;
+}
+.info-img {
+  height: 7rem;
+  margin: 0;
+}
+.info-title {
+  margin-bottom: 5px;
+}
+.info-temp {
+  display: flex;
+  gap: 2rem;
 }
